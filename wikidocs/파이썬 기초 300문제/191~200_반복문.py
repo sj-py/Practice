@@ -79,3 +79,23 @@ for i in ohlc :
 print(volatility)
 
 print("-" * 10)
+
+# 199
+result = []
+for i in ohlc : 
+    if "open" in i : open = i.index("open")
+    if "high" in i : high = i.index("high")
+    if "low" in i : low = i.index("low")
+    if "close" in i : close = i.index("close")
+    if type(i[0]) == int and i[close] > i[open] : result.append(i[high] - i[low])
+print(result)
+
+print("-" * 10)
+
+# 200
+result = 0
+for i in ohlc : 
+    if "open" in i : open = i.index("open")
+    if "close" in i : close = i.index("close")
+    if type(i[0]) == int : result += (i[close] - i[open])
+print(result)
