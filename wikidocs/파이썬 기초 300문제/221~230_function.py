@@ -36,3 +36,35 @@ print_value_by_key(my_dict, "10/26")
 
 # 226
 print("@226")
+def print_5xn(string):
+    num = int(len(string) / 5)
+    for i in range(num + 1):
+        print(string[i * 5 : i * 5 + 5])
+print_5xn("아이엠어보이유알어걸")
+
+# 227
+print("@227")
+def print_mxn(string, num):
+    a = int(len(string) / num)
+    for i in range(a + 1):
+        print(string[i * num : i * num + num])
+print_mxn("아이엠어보이유알어걸", 2) 
+
+# 228
+print("@228")
+def calc_monthly_salary(annual_salary):
+    print(int(annual_salary / 12))
+calc_monthly_salary(12000000)
+
+# 229
+print("@229")
+'''
+왼쪽: 100
+오른쪽: 200
+'''
+
+# 230
+print("@230")
+'''
+229번과 반대
+'''
